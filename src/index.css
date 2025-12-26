@@ -3,10 +3,7 @@
 @import "tailwindcss";
 
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
+ 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -16,4 +13,19 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+/* ===== THEME CONFIG (Tailwind v4) ===== */
+@theme {
+  --color-primary: #197fe6;
+  --color-background-light: #f6f7f8;
+  --color-background-dark: #111921;
+
+  --font-display: "Public Sans", sans-serif;
+}
+
+/* ===== GLOBAL STYLES ===== */
+body {
+  background-color: var(--color-background-light);
+  color: rgb(15 23 42); /* slate-900 */
+  font-family: var(--font-display);
 }
