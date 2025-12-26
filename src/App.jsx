@@ -1,13 +1,13 @@
 import React from "react";
 import Hero from "./pages/Hero";
-import Navbar from "./components/NavBar";
+
+import PageLayout from "./layout/PageLayout";
 
 const App = () => {
   return (
-    <div className="">
-      <Navbar/>
+    <PageLayout>
       <Hero />
-    </div>
+    </PageLayout>
   );
 };
 
