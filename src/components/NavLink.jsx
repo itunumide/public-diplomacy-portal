@@ -1,11 +1,21 @@
 import React from "react";
-const NavLink = ({ label, href = "#" }) => (
-  <a
-    href={href}
-    className="text-sm font-medium text-slate-700 dark:text-slate-200 hover:text-primary transition-colors"
-  >
-    {label}
-  </a>
-);
+import { Link, useLocation } from "react-router-dom";
+
+const NavLink = ({ label, href = "#", onClick }) => {
+  const location = useLocation();
+  const isActive = location.pathname === href;
+
+  return (
+    <Link
+      to={href}
+      onClick={onClick}
+      className={`text-sm font-medium hover:text-primary transition-colors ${
+        isActive ? "text-primary" : "text-text-main dark:text-gray-200"
+      }`}
+    >
+      {label}
+    </Link>
+  );
+};
 
 export default NavLink;
