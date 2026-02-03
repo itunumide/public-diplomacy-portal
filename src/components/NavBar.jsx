@@ -41,19 +41,27 @@ const Navbar = ({ showSearch = false }) => {
               <NavLink label="Projects" href="/projects" />
               <NavLink label="Contact" href="/contact" />
             </div>
-            <button
-              onClick={() => setShowSearchBar(!showSearchBar)}
-              className="p-2 text-text-main dark:text-white hover:bg-neutral-light dark:hover:bg-gray-800 rounded-lg transition-colors"
-            >
-              <MdSearch />
-            </button>
+            {!showSearchBar && (
+              <button
+                onClick={() => setShowSearchBar(true)}
+                className="p-2 text-text-main dark:text-white hover:bg-neutral-light dark:hover:bg-gray-800 rounded-lg transition-colors"
+              >
+                <MdSearch />
+              </button>
+            )}
             {showSearchBar && (
-              <div className="flex-1 max-w-sm mx-4">
+              <div className="flex-1 max-w-sm mx-4 relative">
                 <input
                   type="text"
                   placeholder="Search..."
-                  className="w-full px-3 py-2 border border-border-light rounded-lg bg-background-light dark:bg-background-dark text-text-main dark:text-white focus:outline-none focus:ring-2 focus:ring-primary"
+                  className="w-full px-3 py-2 pr-10 border border-border-light rounded-lg bg-background-light dark:bg-background-dark text-text-main dark:text-white focus:outline-none focus:ring-2 focus:ring-primary"
                 />
+                <button
+                  onClick={() => setShowSearchBar(false)}
+                  className="absolute right-2 top-1/2 transform -translate-y-1/2 p-1 text-text-main dark:text-white hover:bg-neutral-light dark:hover:bg-gray-800 rounded transition-colors"
+                >
+                  <MdClose />
+                </button>
               </div>
             )}
             <div className="flex gap-3 ml-4">
@@ -96,18 +104,28 @@ const Navbar = ({ showSearch = false }) => {
             <NavLink label="Articles" href="/articles" onClick={toggleMenu} />
             <NavLink label="Projects" href="/projects" onClick={toggleMenu} />
             <NavLink label="Contact" href="/contact" onClick={toggleMenu} />
-            <button
-              onClick={() => setShowSearchBar(!showSearchBar)}
-              className="p-2 text-text-main dark:text-white hover:bg-neutral-light dark:hover:bg-gray-800 rounded-lg transition-colors"
-            >
-              <MdSearch />
-            </button>
+            {!showSearchBar && (
+              <button
+                onClick={() => setShowSearchBar(true)}
+                className="p-2 text-text-main dark:text-white hover:bg-neutral-light dark:hover:bg-gray-800 rounded-lg transition-colors"
+              >
+                <MdSearch />
+              </button>
+            )}
             {showSearchBar && (
-              <input
-                type="text"
-                placeholder="Search..."
-                className="w-full max-w-sm px-3 py-2 border border-border-light rounded-lg bg-background-light dark:bg-background-dark text-text-main dark:text-white focus:outline-none focus:ring-2 focus:ring-primary"
-              />
+              <div className="relative w-full max-w-sm">
+                <input
+                  type="text"
+                  placeholder="Search..."
+                  className="w-full px-3 py-2 pr-10 border border-border-light rounded-lg bg-background-light dark:bg-background-dark text-text-main dark:text-white focus:outline-none focus:ring-2 focus:ring-primary"
+                />
+                <button
+                  onClick={() => setShowSearchBar(false)}
+                  className="absolute right-2 top-1/2 transform -translate-y-1/2 p-1 text-text-main dark:text-white hover:bg-neutral-light dark:hover:bg-gray-800 rounded transition-colors"
+                >
+                  <MdClose />
+                </button>
+              </div>
             )}
             <div className="flex gap-3 mt-4">
               <button className="flex h-9 items-center justify-center rounded-lg border border-border-light px-4 text-sm font-bold text-text-main hover:bg-neutral-light dark:border-gray-700 dark:text-white dark:hover:bg-gray-800 transition-colors">
