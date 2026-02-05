@@ -1,7 +1,5 @@
-import React from 'react'
-
-;
-import Button from '../components/reuseables/Button';
+import React from "react";
+import Button from "../components/reuseables/Button";
 
 const About = () => {
   return (
@@ -11,7 +9,7 @@ const About = () => {
         <span className="text-primary text-sm font-bold uppercase">
           Who We Are
         </span>
-        <h1 className="text-3xl md:text-4xl font-extrabold text-[#111418] dark:text-white">
+        <h1 className="text-3xl md:text-4xl font-extrabold text-[#111418]   ">
           About the Institute
         </h1>
         <div className="h-1 w-20 bg-primary rounded-full mt-2" />
@@ -33,20 +31,18 @@ const About = () => {
 
           {/* Text */}
           <div className="lg:w-1/2 flex flex-col gap-6 justify-center">
-            <h2 className="text-2xl md:text-3xl font-bold text-[#111418] dark:text-white">
+            <h2 className="text-2xl md:text-3xl font-bold text-[#111418]   ">
               The Chartered Institute of Public Diplomacy, Nigeria
             </h2>
 
-            <p className="text-[#637588] dark:text-gray-300">
+            <p className="text-[#637588]    ">
               We are the premier regulatory body dedicated to training,
               certifying, and upholding the highest standards of diplomatic
               practice and public administration in Nigeria.
             </p>
 
             <div className="flex gap-4">
-              <Button className="h-12 px-6">
-                Read Our Full History
-              </Button>
+              <Button className="h-12 px-6">Read Our Full History</Button>
               <Button variant="outline" className="h-12 px-6">
                 View Leadership
               </Button>

@@ -1,20 +1,21 @@
 import React from "react";
-import { Link, useLocation } from "react-router-dom";
 
 const NavLink = ({ label, href = "#", onClick }) => {
-  const location = useLocation();
-  const isActive = location.pathname === href;
+  const handleClick = (e) => {
+    // Call the onClick handler if provided (for mobile menu)
+    if (onClick) {
+      onClick(e);
+    }
+  };
 
   return (
-    <Link
-      to={href}
-      onClick={onClick}
-      className={`text-sm font-medium hover:text-primary transition-colors ${
-        isActive ? "text-primary" : "text-text-main dark:text-gray-200"
-      }`}
+    <a
+      href={href}
+      onClick={handleClick}
+      className="text-sm font-medium hover:text-primary transition-colors text-text-main  "
     >
       {label}
-    </Link>
+    </a>
   );
 };
 

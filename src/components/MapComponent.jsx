@@ -4,8 +4,8 @@ import { MdMap } from "react-icons/md";
 const MapComponent = () => {
   const [imageError, setImageError] = useState(false);
   return (
-    <div className="w-full h-64 rounded-xl overflow-hidden border border-[#dce0e5] dark:border-[#2a3441] shadow-sm relative group">
-      <div className="absolute inset-0 bg-gray-200 dark:bg-gray-700 flex items-center justify-center">
+    <div className="w-full h-64 rounded-xl overflow-hidden border border-[#dce0e5]   shadow-sm relative group">
+      <div className="absolute inset-0 bg-gray-200   flex items-center justify-center">
         {imageError ? (
           <MdMap className="text-4xl text-gray-400" />
         ) : (

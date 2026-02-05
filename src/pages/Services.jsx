@@ -2,7 +2,11 @@ import React from "react";
 import ServicesSection from "../components/ServicesSection";
 
 const Services = () => {
-  return <ServicesSection />;
+  return (
+    <div id="services">
+      <ServicesSection />
+    </div>
+  );
 };
 
 export default Services;

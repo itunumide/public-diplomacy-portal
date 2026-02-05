@@ -44,7 +44,7 @@ const Articles = () => {
     {
       isOfficial: true,
       icon: "article",
-      iconBg: "bg-blue-50 dark:bg-blue-900/30 text-primary",
+      iconBg: "bg-blue-50   text-primary",
       type: "Featured Article",
       badgeClass: "text-primary bg-primary/10",
       date: "Oct 10",
@@ -56,11 +56,9 @@ const Articles = () => {
     {
       isOfficial: false,
       icon: "library_books",
-      iconBg:
-        "bg-slate-50 dark:bg-slate-700 text-slate-700 dark:text-slate-300",
+      iconBg: "bg-slate-50   text-slate-700  ",
       type: "Publication",
-      badgeClass:
-        "text-slate-600 dark:text-slate-400 bg-slate-100 dark:bg-slate-700",
+      badgeClass: "text-slate-600   bg-slate-100  ",
       date: "Oct 08",
       title: "Annual Report on Diplomatic Engagements",
       description:
@@ -70,11 +68,9 @@ const Articles = () => {
     {
       isOfficial: false,
       icon: "school",
-      iconBg:
-        "bg-slate-50 dark:bg-slate-700 text-slate-700 dark:text-slate-300",
+      iconBg: "bg-slate-50   text-slate-700  ",
       type: "Research Paper",
-      badgeClass:
-        "text-slate-600 dark:text-slate-400 bg-slate-100 dark:bg-slate-700",
+      badgeClass: "text-slate-600   bg-slate-100  ",
       date: "Oct 05",
       title: "Cultural Exchange Programs: Impact Assessment",
       description:
@@ -84,7 +80,10 @@ const Articles = () => {
   ];
 
   return (
-    <div className="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 antialiased overflow-x-hidden">
+    <div
+      id="articles"
+      className=" pt-10 bg-background-light   font-display text-slate-900   antialiased overflow-x-hidden"
+    >
       <div className="relative flex h-auto min-h-screen w-full flex-col group/design-root">
         <div className="layout-container flex h-full grow flex-col">
           <div className="flex flex-1 justify-center py-10 px-4 md:px-8 lg:px-40">
@@ -97,7 +96,7 @@ const Articles = () => {
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
                 <div className="lg:col-span-8 flex flex-col gap-6">
                   <div className="flex items-center justify-between">
-                    <h3 className="text-xl font-bold text-slate-900 dark:text-white">
+                    <h3 className="text-xl font-bold text-slate-900   ">
                       Latest Articles
                     </h3>
                     <a
@@ -111,15 +110,15 @@ const Articles = () => {
                     {articles.map((article, index) => (
                       <ArticleCard key={index} article={article} />
                     ))}
-                    <div className="flex flex-col items-center justify-center gap-4 bg-slate-50 dark:bg-slate-800/50 rounded-xl p-8 border-2 border-dashed border-slate-200 dark:border-slate-700 text-center">
+                    <div className="flex flex-col items-center justify-center gap-4 bg-slate-50  /50 rounded-xl p-8 border-2 border-dashed border-slate-200   text-center">
                       <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
                         <MdArticle />
                       </div>
                       <div>
-                        <h4 className="text-slate-900 dark:text-white text-lg font-bold">
+                        <h4 className="text-slate-900    text-lg font-bold">
                           Stay Informed
                         </h4>
-                        <p className="text-slate-500 dark:text-slate-400 text-sm mt-1">
+                        <p className="text-slate-500   text-sm mt-1">
                           Subscribe to get notified about new articles and
                           publications.
                         </p>
@@ -132,7 +131,7 @@ const Articles = () => {
                 </div>
                 <div className="lg:col-span-4 flex flex-col gap-6">
                   <div className="flex items-center justify-between">
-                    <h3 className="text-xl font-bold text-slate-900 dark:text-white">
+                    <h3 className="text-xl font-bold text-slate-900   ">
                       Recent Publications
                     </h3>
                     <a

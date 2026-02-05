@@ -9,15 +9,15 @@ const ProjectTabs = () => {
   ];
 
   return (
-    <section className="w-full border-b border-[#dce0e5] dark:border-gray-700">
+    <section className="w-full border-b border-[#dce0e5]  ">
       <div className="flex gap-8 overflow-x-auto no-scrollbar">
         {tabs.map((tab, index) => (
           <a
             key={index}
             className={`flex flex-col items-center justify-center border-b-[3px] pb-3 pt-4 px-2 min-w-max ${
               tab.active
-                ? "border-b-text-main dark:border-b-white text-text-main dark:text-white"
-                : "border-b-transparent text-text-secondary dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors"
+                ? "border-b-text-main   text-text-main   "
+                : "border-b-transparent text-text-secondary   hover:text-primary   transition-colors"
             }`}
             href="#"
           >

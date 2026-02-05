@@ -5,7 +5,10 @@ import MembershipCategories from "../components/MembershipCategories";
 
 const Membership = () => {
   return (
-    <div className="flex flex-col items-center w-full bg-white dark:bg-background-dark text-[#111418] dark:text-white font-display overflow-x-hidden">
+    <div
+      id="membership"
+      className="flex pt-10 flex-col items-center w-full bg-white   text-[#111418]    font-display overflow-x-hidden"
+    >
       <MembershipHero />
       <BenefitsGrid />
       <MembershipCategories />

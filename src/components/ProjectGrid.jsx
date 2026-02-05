@@ -67,7 +67,7 @@ const ProjectGrid = () => {
         ))}
       </div>
       <div className="flex justify-center mt-12">
-        <button className="flex min-w-[120px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-6 bg-[#f0f2f4] dark:bg-gray-800 text-text-main dark:text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
+        <button className="flex min-w-[120px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-6 bg-[#f0f2f4]   text-text-main    text-sm font-bold leading-normal tracking-[0.015em] hover:bg-gray-200   transition-colors">
           <span className="truncate">Load More Initiatives</span>
         </button>
       </div>

@@ -6,10 +6,10 @@ const MembershipHero = () => {
         <div className="flex items-center gap-2 text-primary font-bold text-sm tracking-wider uppercase">
           <span className="w-8 h-[2px] bg-primary"></span> Membership
         </div>
-        <h1 className="text-[#111418] dark:text-white tracking-tight text-4xl lg:text-5xl font-black leading-tight">
+        <h1 className="text-[#111418]    tracking-tight text-4xl lg:text-5xl font-black leading-tight">
           Become a Chartered Public Diplomat
         </h1>
-        <p className="text-[#637588] dark:text-gray-300 text-lg font-normal leading-relaxed max-w-[720px]">
+        <p className="text-[#637588]     text-lg font-normal leading-relaxed max-w-[720px]">
           Join a prestigious network of professionals dedicated to advancing the
           practice of public diplomacy in Nigeria and beyond. Gain recognition,
           access exclusive resources, and elevate your career.

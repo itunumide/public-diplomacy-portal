@@ -1,19 +1,16 @@
-import React from 'react'
-import MissionGrid from '../components/MissionGrid';
-import AboutHero from '../components/AboutHero';
-import CallToAction from '../components/reuseables/CallToAction';
-
+import React from "react";
+import MissionGrid from "../components/MissionGrid";
+import AboutHero from "../components/AboutHero";
+import CallToAction from "../components/reuseables/CallToAction";
 
 const About = () => {
   return (
     <>
-     
-      <main className="bg-white px-10 dark:bg-background-dark">
+      <main id="about" className="bg-white px-10 pt-10  ">
         <AboutHero />
         <MissionGrid />
         <CallToAction />
       </main>
-      
     </>
   );
 };

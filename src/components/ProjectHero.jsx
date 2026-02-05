@@ -9,10 +9,10 @@ const ProjectHero = () => {
             <span className="text-primary font-bold tracking-wider text-xs uppercase">
               Strategic Vision
             </span>
-            <h1 className="text-text-main dark:text-white text-4xl md:text-5xl font-black leading-tight tracking-[-0.033em]">
+            <h1 className="text-text-main    text-4xl md:text-5xl font-black leading-tight tracking-[-0.033em]">
               Advancing Diplomacy Through Strategic Action
             </h1>
-            <h2 className="text-text-secondary dark:text-gray-300 text-base md:text-lg font-normal leading-relaxed max-w-xl">
+            <h2 className="text-text-secondary     text-base md:text-lg font-normal leading-relaxed max-w-xl">
               Exploring the ongoing collaborations, policy frameworks, and
               educational initiatives established by the CIPD across Nigeria and
               the West African region.
@@ -22,7 +22,7 @@ const ProjectHero = () => {
             <button className="flex cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-blue-700 transition-colors shadow-sm">
               <span className="truncate">View Annual Report</span>
             </button>
-            <button className="flex cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-text-main dark:text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
+            <button className="flex cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-white   border border-gray-200   text-text-main    text-base font-bold leading-normal tracking-[0.015em] hover:bg-gray-50   transition-colors">
               <span className="truncate">Partner With Us</span>
             </button>
           </div>
@@ -37,7 +37,7 @@ const ProjectHero = () => {
           >
             <div className="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-all duration-500"></div>
           </div>
-          <p className="mt-3 text-xs text-text-secondary dark:text-gray-500 text-right italic">
+          <p className="mt-3 text-xs text-text-secondary text-right italic">
             CIPD Annual Summit, Abuja.
           </p>
         </div>

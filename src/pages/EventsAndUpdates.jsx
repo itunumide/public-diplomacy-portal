@@ -53,7 +53,7 @@ const EventsAndUpdates = () => {
     {
       isOfficial: true,
       icon: "verified_user",
-      iconBg: "bg-blue-50 dark:bg-blue-900/30 text-primary",
+      iconBg: "bg-blue-50   text-primary",
       type: "Official Notice",
       badgeClass: "text-primary bg-primary/10",
       date: "Oct 10",
@@ -65,11 +65,9 @@ const EventsAndUpdates = () => {
     {
       isOfficial: false,
       icon: "handshake",
-      iconBg:
-        "bg-slate-50 dark:bg-slate-700 text-slate-700 dark:text-slate-300",
+      iconBg: "bg-slate-50   text-slate-700  ",
       type: "Press Release",
-      badgeClass:
-        "text-slate-600 dark:text-slate-400 bg-slate-100 dark:bg-slate-700",
+      badgeClass: "text-slate-600   bg-slate-100  ",
       date: "Oct 08",
       title: "Partnership with Ministry of Foreign Affairs",
       description:
@@ -79,11 +77,9 @@ const EventsAndUpdates = () => {
     {
       isOfficial: false,
       icon: "school",
-      iconBg:
-        "bg-slate-50 dark:bg-slate-700 text-slate-700 dark:text-slate-300",
+      iconBg: "bg-slate-50   text-slate-700  ",
       type: "Academic",
-      badgeClass:
-        "text-slate-600 dark:text-slate-400 bg-slate-100 dark:bg-slate-700",
+      badgeClass: "text-slate-600   bg-slate-100  ",
       date: "Oct 05",
       title: "Call for Papers: Journal of Public Diplomacy",
       description:
@@ -93,87 +89,88 @@ const EventsAndUpdates = () => {
   ];
 
   return (
-   
-      <div className="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 antialiased overflow-x-hidden">
-        <div className="relative flex h-auto min-h-screen w-full flex-col group/design-root">
-          <div className="layout-container flex h-full grow flex-col">
-            <div className="flex flex-1 justify-center py-10 px-4 md:px-8 lg:px-40">
-              <div className="layout-content-container flex flex-col max-w-[1200px] flex-1 gap-8">
-                <SectionHeader
-                  title="Events & Updates"
-                  description="Stay informed with the latest conferences, workshops, and official institutional announcements."
-                />
-                <CategoryChips
-                  categories={[
-                    { name: "All", active: true },
-                    { name: "Conferences", active: false },
-                    { name: "Seminars", active: false },
-                    { name: "Press Releases", active: false },
-                    { name: "Workshops", active: false },
-                  ]}
-                />
-                <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
-                  <div className="lg:col-span-8 flex flex-col gap-6">
-                    <div className="flex items-center justify-between">
-                      <h3 className="text-xl font-bold text-slate-900 dark:text-white">
-                        Upcoming Events
-                      </h3>
-                      <a
-                        className="text-primary text-sm font-medium hover:underline flex items-center gap-1"
-                        href="#"
-                      >
-                        View Calendar <MdArrowForward className="text-sm" />
-                      </a>
-                    </div>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                      {events.map((event, index) => (
-                        <EventCard key={index} event={event} />
-                      ))}
-                      <div className="flex flex-col items-center justify-center gap-4 bg-slate-50 dark:bg-slate-800/50 rounded-xl p-8 border-2 border-dashed border-slate-200 dark:border-slate-700 text-center">
-                        <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
-                          <MdEventAvailable />
-                        </div>
-                        <div>
-                          <h4 className="text-slate-900 dark:text-white text-lg font-bold">
-                            Don't Miss Out
-                          </h4>
-                          <p className="text-slate-500 dark:text-slate-400 text-sm mt-1">
-                            Subscribe to get notified about new events and
-                            workshops.
-                          </p>
-                        </div>
-                        <button className="bg-primary hover:bg-primary/90 text-white text-sm font-medium h-9 px-4 rounded-lg transition-colors">
-                          Subscribe to Updates
-                        </button>
+    <div
+      id="events"
+      className="bg-background-light  pt-10   font-display text-slate-900   antialiased overflow-x-hidden"
+    >
+      <div className="relative flex h-auto min-h-screen w-full flex-col group/design-root">
+        <div className="layout-container flex h-full grow flex-col">
+          <div className="flex flex-1 justify-center py-10 px-4 md:px-8 lg:px-40">
+            <div className="layout-content-container flex flex-col max-w-[1200px] flex-1 gap-8">
+              <SectionHeader
+                title="Events & Updates"
+                description="Stay informed with the latest conferences, workshops, and official institutional announcements."
+              />
+              <CategoryChips
+                categories={[
+                  { name: "All", active: true },
+                  { name: "Conferences", active: false },
+                  { name: "Seminars", active: false },
+                  { name: "Press Releases", active: false },
+                  { name: "Workshops", active: false },
+                ]}
+              />
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                <div className="lg:col-span-8 flex flex-col gap-6">
+                  <div className="flex items-center justify-between">
+                    <h3 className="text-xl font-bold text-slate-900   ">
+                      Upcoming Events
+                    </h3>
+                    <a
+                      className="text-primary text-sm font-medium hover:underline flex items-center gap-1"
+                      href="#"
+                    >
+                      View Calendar <MdArrowForward className="text-sm" />
+                    </a>
+                  </div>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    {events.map((event, index) => (
+                      <EventCard key={index} event={event} />
+                    ))}
+                    <div className="flex flex-col items-center justify-center gap-4 bg-slate-50  /50 rounded-xl p-8 border-2 border-dashed border-slate-200   text-center">
+                      <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+                        <MdEventAvailable />
                       </div>
+                      <div>
+                        <h4 className="text-slate-900    text-lg font-bold">
+                          Don't Miss Out
+                        </h4>
+                        <p className="text-slate-500   text-sm mt-1">
+                          Subscribe to get notified about new events and
+                          workshops.
+                        </p>
+                      </div>
+                      <button className="bg-primary hover:bg-primary/90 text-white text-sm font-medium h-9 px-4 rounded-lg transition-colors">
+                        Subscribe to Updates
+                      </button>
                     </div>
                   </div>
-                  <div className="lg:col-span-4 flex flex-col gap-6">
-                    <div className="flex items-center justify-between">
-                      <h3 className="text-xl font-bold text-slate-900 dark:text-white">
-                        Institutional Updates
-                      </h3>
-                      <a
-                        className="text-primary text-sm font-medium hover:underline flex items-center gap-1"
-                        href="#"
-                      >
-                        Archive <MdHistory className="text-sm" />
-                      </a>
-                    </div>
-                    <div className="flex flex-col gap-4">
-                      {updates.map((update, index) => (
-                        <UpdateItem key={index} update={update} />
-                      ))}
-                    </div>
-                    <NewsletterCTA />
+                </div>
+                <div className="lg:col-span-4 flex flex-col gap-6">
+                  <div className="flex items-center justify-between">
+                    <h3 className="text-xl font-bold text-slate-900   ">
+                      Institutional Updates
+                    </h3>
+                    <a
+                      className="text-primary text-sm font-medium hover:underline flex items-center gap-1"
+                      href="#"
+                    >
+                      Archive <MdHistory className="text-sm" />
+                    </a>
                   </div>
+                  <div className="flex flex-col gap-4">
+                    {updates.map((update, index) => (
+                      <UpdateItem key={index} update={update} />
+                    ))}
+                  </div>
+                  <NewsletterCTA />
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-   
+    </div>
   );
 };
 

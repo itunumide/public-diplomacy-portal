@@ -5,14 +5,17 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <section className="relative flex min-h-[85vh] items-center justify-center px-4 py-12 md:px-10 lg:px-20 overflow-hidden">
+    <section
+      id="home"
+      className="relative flex min-h-[85vh] items-center justify-center px-4 py-12 md:px-10 lg:px-20 overflow-hidden"
+    >
       {/* Background */}
       <div className="absolute inset-0">
         <img
           src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZQotc5Os8EexPRFv-3OlvDX_x-tDCueuKifPopIsVONi1CyjQBHGEhH2dRKmBFg7ztFTVt4JogiH7wEihvqbdrpgpDnxcdVuTZOMadb7ae0t-e8dBHLhxWv3CKpQ8TJ5uBoK7eDQmzeDuO2dJ6ua_QkQ20iY5MeRCdhnNVoQnGbhTh9JOi3Ylcl6I1it5Hp-5Rb9ISeJThOnE1u0w62nFNYHO4VJItnMjxveLmarRrFAWbUEi7orZxpHGGwLSUgW-5T3iBWqTtzDG"
-          className="h-full w-full object-cover opacity-40 dark:opacity-10"
+          className="h-full w-full object-cover opacity-40  "
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-white via-white/80 to-background-light dark:from-background-dark dark:to-background-dark" />
+        <div className="absolute inset-0 bg-gradient-to-b from-white via-white/80 to-background-light    " />
       </div>
 
       {/* Content */}
@@ -27,13 +30,13 @@ const Hero = () => {
           & Governance
         </h1>
 
-        <p className="text-lg md:text-xl text-slate-600 dark:text-slate-300">
+        <p className="text-lg md:text-xl text-slate-600  ">
           The Chartered Institute of Public Diplomacy, Nigeria is the premier
           body dedicated to professionalizing diplomatic practice and certifying
           excellence in public service.
         </p>
 
-        <div className="flex flex-col sm:flex-row justify-center gap-4">
+        <div className="flex flex-col mt-5 sm:flex-row justify-center gap-4">
           <Button className="h-12 px-6">Become a Member</Button>
           <Button variant="outline" className="h-12 px-6">
             Explore Services →

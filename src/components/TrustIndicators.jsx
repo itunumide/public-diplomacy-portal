@@ -14,8 +14,8 @@ const TrustIndicators = () => {
   };
 
   return (
-    <div className="mt-12 border-t border-slate-200/60 dark:border-slate-800/60 pt-8 text-center">
-      <p className="text-sm uppercase tracking-widest text-slate-500 dark:text-slate-400">
+    <div className="mt-12 border-t border-slate-200/60  /60 pt-8 text-center">
+      <p className="text-sm uppercase tracking-widest text-slate-500  ">
         Accredited & Recognized By
       </p>
 
@@ -25,7 +25,7 @@ const TrustIndicators = () => {
             {React.createElement(iconMap[item.icon], {
               className: "text-3xl text-slate-400",
             })}
-            <span className="text-xs font-bold whitespace-pre-line text-slate-600 dark:text-slate-400">
+            <span className="text-xs font-bold whitespace-pre-line text-slate-600  ">
               {item.text}
             </span>
           </div>

@@ -27,22 +27,20 @@ const items = [
 
 const MissionGrid = () => {
   return (
-    <div className="bg-[#f8f9fa] dark:bg-[#151c24] py-16 border-y">
+    <div className="bg-[#f8f9fa]   py-16 border-y">
       <div className="max-w-[1280px] mx-auto px-4 lg:px-10 grid md:grid-cols-3 gap-6">
         {items.map((item) => (
           <div
             key={item.title}
-            className="bg-white dark:bg-[#1a222a] p-8 rounded-xl border shadow-sm hover:shadow-md transition-shadow"
+            className="bg-white   p-8 rounded-xl border shadow-sm hover:shadow-md transition-shadow"
           >
             {React.createElement(iconMap[item.icon], {
               className: "text-primary text-3xl",
             })}
-            <h3 className="text-xl font-bold mt-4 text-[#111418] dark:text-white">
+            <h3 className="text-xl font-bold mt-4 text-[#111418]   ">
               {item.title}
             </h3>
-            <p className="text-sm text-[#637588] dark:text-gray-400 mt-2">
-              {item.text}
-            </p>
+            <p className="text-sm text-[#637588]   mt-2">{item.text}</p>
           </div>
         ))}
       </div>

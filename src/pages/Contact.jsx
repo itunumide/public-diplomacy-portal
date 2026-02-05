@@ -6,7 +6,7 @@ import ContactForm from "../components/ContactForm";
 
 const Contact = () => {
   return (
-    <main className="flex-grow">
+    <main id="contact" className="flex-grow  pt-10">
       <div className="max-w-[1280px] mx-auto px-4 sm:px-10 py-10 flex flex-col gap-10">
         <ContactHero />
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
