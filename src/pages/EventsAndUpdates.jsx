@@ -9,12 +9,12 @@ import NewsletterCTA from "../components/NewsletterCTA";
 const EventsAndUpdates = () => {
   const events = [
     {
-      month: "Oct",
+      month: "May",
       day: "12",
       image:
         "https://lh3.googleusercontent.com/aida-public/AB6AXuAPNsEqKZdqZl62d0C3rsHz_z-ZAVhW6ZMA1Eg1k6ijZXA8NWpG1N-6oe-YZBFiyY3fwbV0hBsrtz4QjsmOePHdkufDx35h5kWY4VZjJ5RYXMjLzKOC4yFmwGYNK7XE5fHKQw0aynleSJzuJSucNBE58eY02N0SUqURuFrpIKeDNnmGuRNjJPnxnRDM62GLKT-XhXQ_6bzSdFm7AdfGPTInPMgwLuVVE4mgaMjX50lxJ3JdaVpboePs6xiuEjxrDPz3P2JLzv-8pamR",
       type: "Conference",
-      title: "Annual Diplomacy Summit 2024",
+      title: "The Effect of Diplomacy on Strategic Crisis Management & Administrative Leadership In Private & Public Sectors",
       locationIcon: "location_on",
       location: "Abuja, Nigeria",
       time: "09:00 AM",
@@ -22,30 +22,30 @@ const EventsAndUpdates = () => {
         "Join industry leaders for our flagship summit discussing the future of public diplomacy and international relations strategies.",
     },
     {
-      month: "Nov",
-      day: "05",
+      month: "June",
+      day: "26",
       image:
         "https://lh3.googleusercontent.com/aida-public/AB6AXuCB-P5mB2NWV3riTO8KCwjnwEXwPEhTJuVwAHMPzXqPSHH2uyVdCO7Mj-Po_kHCpITrCV6F7r11U0rQqN5KEOTIfBZt2C32hZjxgfektrwThsTm3H6dWWaqkfRdqe5QSa6aGdTNv4KJuLcOIitiXwUE1bg8VMW7Wfib0itLFhLTsEvyY-Czd1F3Ipzp8YG_ioi7MoHWwVzEKouLFiA-VU6u4FbyDGjM_YuimZC6DImpr0RlrVhlWOifeL5D0ALlGXQOjBHswsyswK8I",
-      type: "Workshop",
-      title: "Public Speaking for Diplomats",
-      locationIcon: "videocam",
-      location: "Virtual Event",
+      type: "Training",
+      title: "PROFESSIONAL TRAININGPROGRAM (PTP) / INUCTION",
+      locationIcon: "location_on",
+      location: "Akwa Ibom",
       time: "02:00 PM",
       description:
-        "A comprehensive interactive workshop designed to enhance communication skills for aspiring and seasoned diplomats.",
+        " The Psychology of influence and persuasion in the practice of diplomacy",
     },
     {
-      month: "Nov",
-      day: "20",
+      month: "Aug",
+      day: "26",
       image:
         "https://lh3.googleusercontent.com/aida-public/AB6AXuB6C-pYNGE33KNqC7zRkSwlWb19qJwBzf4i_plAEnKBUewvCv2q4H7hEP2MSsLah8dEW-QHF1hBBJ1y3sJKMNqRNcrdsSEX-NUHtlesOBhaIh6JHoO2O1A5ALpw4ayZhJYoEgYbfcIzM40zKJbadM5g5GlrWQFq0SkHzXfMCZrX8CU3qNMRFTICdBQo6-6GC7pU9qMmLCqW-CB0Loj-bvTpj2oRq6fKkPr--VXsX6QaRMeFDGxHK5zIU9HqwC7kAQGa0kVsN76pbajG",
-      type: "Seminar",
-      title: "International Relations Seminar",
+      type: "Induction",
+      title: "WORKSHOP/ZONAL CONFERENCE/INDUCTION",
       locationIcon: "location_on",
-      location: "Lagos, Nigeria",
+      location: "Port Harcourt, Nigeria",
       time: "10:30 AM",
       description:
-        "An in-depth seminar exploring contemporary issues in international relations, trade policy, and cross-border cooperation.",
+        "Effective deploying soft power in achieving organizational goals and objectives.",
     },
   ];
 
@@ -56,23 +56,23 @@ const EventsAndUpdates = () => {
       iconBg: "bg-blue-50   text-primary",
       type: "Official Notice",
       badgeClass: "text-primary bg-primary/10",
-      date: "Oct 10",
-      title: "New Certification Requirements for 2025",
+      date: "Nov 16",
+      title: "International Centre For Diplomacy & Protocol, UK",
       description:
-        "The Institute has updated the curriculum standards for the upcoming academic year.",
-      buttonText: "Read Notice",
+        "Motivational leadership and building successful teams.",
+      buttonText: "Download Calendar",
     },
     {
       isOfficial: false,
       icon: "handshake",
       iconBg: "bg-slate-50   text-slate-700  ",
-      type: "Press Release",
+      type: "",
       badgeClass: "text-slate-600   bg-slate-100  ",
-      date: "Oct 08",
-      title: "Partnership with Ministry of Foreign Affairs",
+      date: "Aug 17",
+      title: "International Centre For Diplomacy & Protocol, Kenya",
       description:
-        "Strategic partnership aimed at fostering stronger diplomatic ties across the region.",
-      buttonText: "Read Release",
+        " Advance management and leadership skills for excellence.",
+      buttonText: "Download Calendar",
     },
     {
       isOfficial: false,
@@ -81,10 +81,10 @@ const EventsAndUpdates = () => {
       type: "Academic",
       badgeClass: "text-slate-600   bg-slate-100  ",
       date: "Oct 05",
-      title: "Call for Papers: Journal of Public Diplomacy",
+      title: "Ethics and Leadership for Good Governance:",
       description:
-        "Submissions are now open for the Winter 2024 edition of our academic journal.",
-      buttonText: "View Guidelines",
+        " for government Representatives, LGA Chairmen, Directors of Ministries, councilors, politicians, etc. ",
+      buttonText: "See More",
     },
   ];
 
@@ -118,7 +118,7 @@ const EventsAndUpdates = () => {
                     </h3>
                     <a
                       className="text-primary text-sm font-medium hover:underline flex items-center gap-1"
-                      href="#"
+                      href="/events"
                     >
                       View Calendar <MdArrowForward className="text-sm" />
                     </a>
@@ -132,10 +132,10 @@ const EventsAndUpdates = () => {
                         <MdEventAvailable />
                       </div>
                       <div>
-                        <h4 className="text-slate-900    text-lg font-bold">
+                        <h4 className="text-slate-900  text-lg font-bold">
                           Don't Miss Out
                         </h4>
-                        <p className="text-slate-500   text-sm mt-1">
+                        <p className="text-slate-500 text-sm mt-1">
                           Subscribe to get notified about new events and
                           workshops.
                         </p>

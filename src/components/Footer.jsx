@@ -10,6 +10,7 @@ import {
 } from "react-icons/md";
 
 const Footer = () => {
+  const year = new Date().getFullYear()
   return (
     <footer className="w-full bg-background-light   border-t border-slate-200  ">
       <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
@@ -24,7 +25,7 @@ const Footer = () => {
               </div>
               <div>
                 <h2 className="text-xl font-bold text-slate-900    leading-tight">
-                  CIPD Nigeria
+                  CIPDM
                 </h2>
                 <p className="text-xs font-medium text-primary uppercase tracking-wider">
                   Chartered Institute
@@ -201,9 +202,9 @@ const Footer = () => {
                 <span className="text-sm text-slate-600  ">
                   CIPD Headquarters
                   <br />
-                  14 Diplomacy Drive, Central Business District,
+                  169, Ikorodu Road, (1st Floor) Awoyokun B/Stop
                   <br />
-                  Abuja, Nigeria.
+                  Lagos, Nigeria.
                 </span>
               </div>
               <div className="flex items-center gap-3">
@@ -212,7 +213,7 @@ const Footer = () => {
                   className="text-sm text-slate-600   hover:text-primary transition-colors"
                   href="mailto:info@cipdnigeria.org"
                 >
-                  info@cipdnigeria.org
+                  info@cipdm.org
                 </a>
               </div>
               <div className="flex items-center gap-3">
@@ -221,7 +222,7 @@ const Footer = () => {
                   className="text-sm text-slate-600   hover:text-primary transition-colors"
                   href="tel:+2348001234567"
                 >
-                  +234 800 123 4567
+                  +234 803 073 1170
                 </a>
               </div>
             </div>
@@ -230,7 +231,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="mt-16 pt-8 border-t border-slate-200   flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-slate-500   text-center md:text-left">
-            © 2024 Chartered Institute of Public Diplomacy, Nigeria. All Rights
+            © {year} Chartered Institute of Public Diplomacy, Nigeria. All Rights
             Reserved.
           </p>
           <div className="flex flex-wrap justify-center gap-6">

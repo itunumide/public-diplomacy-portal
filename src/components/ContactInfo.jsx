@@ -14,9 +14,9 @@ const ContactInfo = () => {
             Visit Us
           </h3>
           <p className="text-[#637588]   text-sm font-normal leading-normal">
-            Suite 404, Opic Plaza,
+            Lagos: 169, Ikorodu Road, 
             <br />
-            Ikeja, Lagos, Nigeria
+            (1st floor) Awoyokun B/stop
           </p>
         </div>
       </div>
@@ -30,9 +30,9 @@ const ContactInfo = () => {
             Call Us
           </h3>
           <p className="text-[#637588]   text-sm font-normal leading-normal">
-            +234 800 123 4567
+            +234 802 359 2726
             <br />
-            +234 800 987 6543
+            +234 803 073 1170
           </p>
         </div>
       </div>
@@ -46,9 +46,9 @@ const ContactInfo = () => {
             Email Us
           </h3>
           <p className="text-[#637588]   text-sm font-normal leading-normal">
-            info@cipdnigeria.org
+            info@cipdm.org
             <br />
-            support@cipdnigeria.org
+            support@cipdm.org
           </p>
         </div>
       </div>

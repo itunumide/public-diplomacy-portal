@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import { MdMenu, MdClose, MdSearch } from "react-icons/md";
 import { Link } from "react-router-dom";
 import NavLink from "./NavLink";
+import logo from "../asset/LOGO.png"
+import banner from "../asset/gal4.jpeg"
+
 
 const Navbar = ({ showSearch = false }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -12,34 +15,23 @@ const Navbar = ({ showSearch = false }) => {
   return (
     <>
       <header className="sticky top-0 z-50 w-full border-b border-solid border-border-light bg-background-light/95 backdrop-blur-sm  /95  ">
-        <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto flex h-24 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
           <div className="flex items-center gap-4">
-            <div className="flex size-8 items-center justify-center rounded bg-primary/10 text-primary">
-              <svg
-                className="size-5"
-                fill="none"
-                viewBox="0 0 48 48"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M6 6H42L36 24L42 42H6L12 24L6 6Z"
-                  fill="currentColor"
-                ></path>
-              </svg>
-            </div>
-            <h2 className="text-lg font-extrabold leading-tight tracking-tight text-text-main   ">
-              CIPD Nigeria
-            </h2>
+            <a className="flex w-[180px] h-[70px] items-center justify-center rounded bg-primary/10 " href="/">
+            <img src={logo} alt="" className=""/>
+
+            </a>
+            {/* <a className="text-lg font-extrabold leading-tight tracking-tight text-text-main" href="/">
+              CIPDM
+            </a> */}
           </div>
           <nav className="hidden lg:flex flex-1 justify-end gap-5 items-center">
             <div className="flex items-center gap-8">
-              <NavLink label="Home" href="#home" />
-              <NavLink label="About Us" href="#about" />
-              <NavLink label="Services" href="#services" />
-              <NavLink label="Membership" href="#membership" />
-              <NavLink label="Events" href="#events" />
-              <NavLink label="Articles" href="#articles" />
-              <NavLink label="Projects" href="#projects" />
+              <NavLink label="Home" href="/" />
+              <NavLink label="About Us" href="/about" />
+              <NavLink label="Services" href="/services" />
+              <NavLink label="Membership" href="/membership" />
+              <NavLink label="Events" href="/events" />
               <NavLink label="Contact" href="#contact" />
             </div>
             {!showSearchBar && (
@@ -100,17 +92,15 @@ const Navbar = ({ showSearch = false }) => {
             <MdClose />
           </button>
           <div className="flex flex-col gap-8 items-center">
-            <NavLink label="Home" href="#home" onClick={toggleMenu} />
-            <NavLink label="About Us" href="#about" onClick={toggleMenu} />
-            <NavLink label="Services" href="#services" onClick={toggleMenu} />
+            <NavLink label="Home" href="/" onClick={toggleMenu} />
+            <NavLink label="About Us" href="/about" onClick={toggleMenu} />
+            <NavLink label="Services" href="/services" onClick={toggleMenu} />
             <NavLink
               label="Membership"
-              href="#membership"
+              href="/membership"
               onClick={toggleMenu}
             />
-            <NavLink label="Events" href="#events" onClick={toggleMenu} />
-            <NavLink label="Articles" href="#articles" onClick={toggleMenu} />
-            <NavLink label="Projects" href="#projects" onClick={toggleMenu} />
+            <NavLink label="Events" href="/events" onClick={toggleMenu} />
             <NavLink label="Contact" href="#contact" onClick={toggleMenu} />
             {/* {!showSearchBar && (
               <button

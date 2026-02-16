@@ -6,7 +6,7 @@ import {
   MdArrowForward,
   MdDownload,
 } from "react-icons/md";
-
+import pdf from "../components/reuseables/CIPDM1.PDF"
 const MembershipCategories = () => {
   const [activeTab, setActiveTab] = useState("associate");
 
@@ -20,44 +20,95 @@ const MembershipCategories = () => {
           icon: MdSchool,
           label: "Education",
           detail:
-            "Currently enrolled in an accredited undergraduate or postgraduate program in a relevant field.",
+            "Current enrollment in a recognized university, polytechnic, or equivalent tertiary institution.",
         },
         {
           icon: MdVerified,
           label: "Verification",
           detail:
-            "Valid student ID and proof of enrollment from your institution.",
+            "Demonstrated interest in public service, leadership, or international relations.",
         },
         {
           icon: MdWorkHistory,
           label: "Commitment",
           detail:
-            "Interest in public diplomacy and commitment to professional development through CIPD resources and events.",
+            "Agreement to abide by the CIPDM Code of Conduct and participate in its student mentorship programs.",
+        },
+      ],
+    },
+    graduate: {
+      title: "Graduate Membership (ACIPDM)",
+      description:
+        " Designed for People who exhibit the intellectual capacity and moral discipline essential for a professional career in diplomacy, governance, or management",
+      requirements: [
+        {
+          icon: MdSchool,
+          label: "Education",
+          detail:
+            "Possession of a Bachelor’s degree, HND, or equivalent qualification in a relevant field.",
+        },
+        {
+          icon: MdVerified,
+          label: "Verification",
+          detail:
+            "•	Less than three (3) years of post-graduation professional experience.",
+        },
+        {
+          icon: MdWorkHistory,
+          label: "Commitment",
+          detail:
+            "•	Evidence of active participation in leadership, service, or internship programs.",
         },
       ],
     },
     associate: {
       title: "Associate Membership (ACIPD)",
       description:
-        "Designed for early to mid-career professionals actively engaged in public sector roles, international relations, or corporate diplomacy. Associate members are recognized practitioners committed to ethical standards.",
+        "Designed for professionals who have developed significant practical competence in diplomacy, public administration, or management.",
       requirements: [
         {
           icon: MdWorkHistory,
           label: "Experience",
           detail:
-            "Minimum of 2 years in a relevant public sector, diplomatic, or communications role.",
+            "A minimum of three (3) years of relevant post-graduation professional experience.",
         },
         {
           icon: MdSchool,
           label: "Education",
           detail:
-            "Bachelor's degree or HND equivalent from an accredited institution.",
+            "Possession of a recognized degree or equivalent professional certification.",
         },
         {
           icon: MdVerified,
           label: "Commitment",
           detail:
-            "Adherence to the CIPD Code of Conduct and commitment to 20 hours of annual Continuous Professional Development (CPD).",
+            "Record of ethical conduct and verified professional achievement",
+        },
+      ],
+    },
+
+    full: {
+      title: "Full Membership (MCIPDM)",
+      description:
+        "Full Membership is conferred upon professionals with demonstrable leadership, innovation, and ethical excellence in diplomacy, governance, or management.",
+      requirements: [
+        {
+          icon: MdWorkHistory,
+          label: "Experience",
+          detail:
+            "At least five (5) years of relevant professional experience.",
+        },
+        {
+          icon: MdSchool,
+          label: "Education",
+          detail:
+            "Leadership or managerial responsibility within an organization or public institution",
+        },
+        {
+          icon: MdVerified,
+          label: "Commitment",
+          detail:
+            "Evidence of consistent contribution to public service, governance, or capacity building",
         },
       ],
     },
@@ -116,11 +167,34 @@ const MembershipCategories = () => {
                     : "text-[#637588] group-hover:text-[#111418]"
                 }`}
               >
-                Student Member
+                Student (SCIPDM)
               </span>
               <div
                 className={`h-[3px] w-full mt-3 rounded-t-full transition-colors ${
                   activeTab === "student"
+                    ? "bg-primary shadow-[0_0_10px_rgba(25,127,230,0.5)]"
+                    : "bg-transparent group-hover:bg-gray-300"
+                }`}
+              ></div>
+            </button>
+            <button
+              onClick={() => setActiveTab("graduate")}
+              className={`group flex flex-col items-center justify-center px-4 pb-3 pt-4 cursor-pointer ${
+                activeTab === "graduate" ? "" : ""
+              }`}
+            >
+              <span
+                className={`text-sm font-bold leading-normal tracking-[0.015em] transition-colors ${
+                  activeTab === "graduate"
+                    ? "text-primary"
+                    : "text-[#637588] group-hover:text-[#111418]"
+                }`}
+              >
+                Graduate (GCIPDM)
+              </span>
+              <div
+                className={`h-[3px] w-full mt-3 rounded-t-full transition-colors ${
+                  activeTab === "graduate"
                     ? "bg-primary shadow-[0_0_10px_rgba(25,127,230,0.5)]"
                     : "bg-transparent group-hover:bg-gray-300"
                 }`}
@@ -144,6 +218,29 @@ const MembershipCategories = () => {
               <div
                 className={`h-[3px] w-full mt-3 rounded-t-full transition-colors ${
                   activeTab === "associate"
+                    ? "bg-primary shadow-[0_0_10px_rgba(25,127,230,0.5)]"
+                    : "bg-transparent group-hover:bg-gray-300"
+                }`}
+              ></div>
+            </button>
+                      <button
+              onClick={() => setActiveTab("full")}
+              className={`group flex flex-col items-center justify-center px-4 pb-3 pt-4 cursor-pointer ${
+                activeTab === "associate" ? "" : ""
+              }`}
+            >
+              <span
+                className={`text-sm font-bold leading-normal tracking-[0.015em] transition-colors ${
+                  activeTab === "full"
+                    ? "text-primary"
+                    : "text-[#637588] group-hover:text-[#111418]"
+                }`}
+              >
+                Full (MCIPDM)
+              </span>
+              <div
+                className={`h-[3px] w-full mt-3 rounded-t-full transition-colors ${
+                  activeTab === "full"
                     ? "bg-primary shadow-[0_0_10px_rgba(25,127,230,0.5)]"
                     : "bg-transparent group-hover:bg-gray-300"
                 }`}
@@ -210,12 +307,12 @@ const MembershipCategories = () => {
             </div>
             <div className="flex flex-col sm:flex-row items-center gap-4 mt-10 pt-4">
               <button className="w-full sm:w-auto flex items-center justify-center gap-2 cursor-pointer overflow-hidden rounded-lg h-12 px-8 bg-primary hover:bg-blue-600 text-white text-base font-bold leading-normal tracking-[0.015em] transition-all shadow-lg shadow-blue-500/20">
-                <span>Start Your Application</span>
+                <a href="/membership">Start Your Application</a>
                 <MdArrowForward className="text-[20px]" />
               </button>
               <button className="w-full sm:w-auto flex items-center justify-center gap-2 cursor-pointer overflow-hidden rounded-lg h-12 px-6 bg-white   border border-[#dce0e5]   text-[#111418]    hover:bg-gray-50   text-base font-bold leading-normal tracking-[0.015em] transition-colors">
                 <MdDownload className="text-[20px] text-gray-500" />
-                <span>Download Brochure</span>
+                <a href={pdf} download="Cipdm Membership Citeria">Download Brochure</a>
               </button>
             </div>
           </div>

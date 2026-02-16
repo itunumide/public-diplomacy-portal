@@ -36,13 +36,14 @@ const About = () => {
             </h2>
 
             <p className="text-[#637588]    ">
-              We are the premier regulatory body dedicated to training,
-              certifying, and upholding the highest standards of diplomatic
-              practice and public administration in Nigeria.
+              The Chartered Institute of Public Diplomacy and Management (CIPDM) is an educational and 
+              professional institution designed to professionalize, train, and develop global leaders and managers.
             </p>
 
             <div className="flex gap-4">
-              <Button className="h-12 px-6">Read Our Full History</Button>
+              <Button className="h-12 px-6">
+                <a href="/about">Read Our Full History</a>
+              </Button>
               <Button variant="outline" className="h-12 px-6">
                 View Leadership
               </Button>
