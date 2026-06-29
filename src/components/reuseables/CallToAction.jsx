@@ -1,6 +1,6 @@
 import React from "react";
 import Button from "./Button";
-
+import pdf from "./CIPDM1.pdf"
 const CallToAction = () => {
   return (
     <div className="py-12 text-center">
@@ -13,9 +13,11 @@ const CallToAction = () => {
       </p>
 
       <div className="flex justify-center gap-4 mt-8">
-        <Button className="h-10 px-8 text-sm">Apply for Membership</Button>
+        <Button className="h-10 px-8 text-sm">
+          <a href="/signup">Apply for Membership</a>
+        </Button>
         <Button variant="ghost" className="h-10 px-8 text-sm">
-          Download Brochure
+          <a href={pdf} download="Cipdm Membership Citeria">Download Brochure</a>
         </Button>
       </div>
     </div>

@@ -12,28 +12,28 @@ const Articles = () => {
       image:
         "https://lh3.googleusercontent.com/aida-public/AB6AXuAPNsEqKZdqZl62d0C3rsHz_z-ZAVhW6ZMA1Eg1k6ijZXA8NWpG1N-6oe-YZBFiyY3fwbV0hBsrtz4QjsmOePHdkufDx35h5kWY4VZjJ5RYXMjLzKOC4yFmwGYNK7XE5fHKQw0aynleSJzuJSucNBE58eY02N0SUqURuFrpIKeDNnmGuRNjJPnxnRDM62GLKT-XhXQ_6bzSdFm7AdfGPTInPMgwLuVVE4mgaMjX50lxJ3JdaVpboePs6xiuEjxrDPz3P2JLzv-8pamR",
       category: "Research",
-      title: "The Role of Public Diplomacy in Modern International Relations",
-      author: "Dr. Adebayo Johnson",
-      date: "Oct 12, 2024",
+      title: "Diplomatic Practices for Organisational & National Economic Sustainability ",
+      author: "Dr. Oyewole O. Sarumi ",
+      date: "Nov 11, 2023",
       excerpt:
-        "An in-depth analysis of how public diplomacy shapes global interactions and fosters mutual understanding between nations.",
+        "An in-depth analysis of How Diplomatic Efforts Contribute To Organizational And National Economic Sustainability.",
     },
     {
       image:
         "https://lh3.googleusercontent.com/aida-public/AB6AXuCB-P5mB2NWV3riTO8KCwjnwEXwPEhTJuVwAHMPzXqPSHH2uyVdCO7Mj-Po_kHCpITrCV6F7r11U0rQqN5KEOTIfBZt2C32hZjxgfektrwThsTm3H6dWWaqkfRdqe5QSa6aGdTNv4KJuLcOIitiXwUE1bg8VMW7Wfib0itLFhLTsEvyY-Czd1F3Ipzp8YG_ioi7MoHWwVzEKouLFiA-VU6u4FbyDGjM_YuimZC6DImpr0RlrVhlWOifeL5D0ALlGXQOjBHswsyswK8I",
-      category: "Opinion",
-      title: "Digital Diplomacy: Challenges and Opportunities",
-      author: "Prof. Ngozi Okonjo",
+      category: "Research Paper",
+      title: "THE DYNAMICS OF LEADERSHIP THROUGH DIPLOMACY IN THE FACE OF ECONOMIC AND ORGANIZATIONAL CHALLENGES ",
+      author: "Dr. Oyewole O. Sarumi",
       date: "Nov 05, 2024",
       excerpt:
-        "Exploring the impact of digital platforms on diplomatic practices and the need for adaptive strategies in the digital age.",
+        "Defining diplomacy, leadership, diplomatic leadership, economic and organisational challenges.",
     },
     {
       image:
         "https://lh3.googleusercontent.com/aida-public/AB6AXuB6C-pYNGE33KNqC7zRkSwlWb19qJwBzf4i_plAEnKBUewvCv2q4H7hEP2MSsLah8dEW-QHF1hBBJ1y3sJKMNqRNcrdsSEX-NUHtlesOBhaIh6JHoO2O1A5ALpw4ayZhJYoEgYbfcIzM40zKJbadM5g5GlrWQFq0SkHzXfMCZrX8CU3qNMRFTICdBQo6-6GC7pU9qMmLCqW-CB0Loj-bvTpj2oRq6fKkPr--VXsX6QaRMeFDGxHK5zIU9HqwC7kAQGa0kVsN76pbajG",
-      category: "News",
-      title: "Institute Launches New Public Diplomacy Initiative",
-      author: "Editorial Team",
+      category: "Article",
+      title: "Exploring Diplomatic Option in Practicing Essential Skills in Management",
+      author: "Dr. Essien Akpanuko",
       date: "Nov 20, 2024",
       excerpt:
         "Announcing the launch of a comprehensive program aimed at enhancing public diplomacy education and practice in Africa.",

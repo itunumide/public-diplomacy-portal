@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { MdMap } from "react-icons/md";
-
+import cipdm from "../asset/cipdm.jpeg"
 const MapComponent = () => {
   const [imageError, setImageError] = useState(false);
   return (
@@ -13,9 +13,9 @@ const MapComponent = () => {
             alt="Map location of CIPD Nigeria in Ikeja, Lagos"
             className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity"
             data-alt="Map showing the location of the institute in Lagos"
-            data-location="Ikeja, Lagos, Nigeria"
+            data-location="awoyokun, Lagos, Nigeria"
             onError={() => setImageError(true)}
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEYHBsiwZpYG6_ZJzJ-srUoGuVa6LruCvbBaeWi0fUMFjZSiNsSS1qcVNl5WNMG-EJm8oPQloCUcOXpmlh_XhoSOXcOtr0549WFdjTkJGt03GVWpFja5dzzlLmLVKZx_cTyJoIEuxwa1z9SrdaXloSGQ_Tf8gS39KvscLiO6zaKLMMfviVnbEN0Ln51l7PiQRDQsGwTUPtoCUxj64TBEmdlPdbmVvQkAdynYqiE6F3z11_A24wee0r-wfTe0U1j6X1Y8IvaJGS7BfL"
+            src={cipdm}
           />
         )}
       </div>

@@ -11,17 +11,17 @@ const items = [
   {
     title: "Our Vision",
     icon: "visibility",
-    text: "To be the premier body for public diplomacy and administration in Africa.",
+    text: "To create a positive work environment, work relations, and practices through robust diplomacy and practical, positive policies and actions.",
   },
   {
     title: "Our Mission",
     icon: "flag",
-    text: "Training and certifying professionals for ethical public engagement.",
+    text: "o professionalize public diplomacy and management with a view to training corporate leaders and managers who create sustainable prosperity worldwide.",
   },
   {
     title: "Core Values",
     icon: "diamond",
-    text: "Integrity, professionalism, and patriotism guide our work.",
+    text: "uphold the highest standards of integrity and ethics in all our relationships, both inside and outside the organization.",
   },
 ];
 

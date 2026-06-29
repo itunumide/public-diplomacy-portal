@@ -1,9 +1,12 @@
+import { Link, useNavigate } from "react-router-dom";
 import Badge from "../components/Badge";
 import Button from "../components/reuseables/Button";
 import TrustIndicators from "../components/TrustIndicators";
 import React from "react";
 
 const Hero = () => {
+
+  const navigate = useNavigate()
   return (
     <section
       id="home"
@@ -32,14 +35,16 @@ const Hero = () => {
 
         <p className="text-lg md:text-xl text-slate-600  ">
           The Chartered Institute of Public Diplomacy, Nigeria is the premier
-          body dedicated to professionalizing diplomatic practice and certifying
-          excellence in public service.
+          body dedicated to Build a world of competent multi-faceted public diplomatic leaders & managers.
         </p>
 
         <div className="flex flex-col mt-5 sm:flex-row justify-center gap-4">
-          <Button className="h-12 px-6">Become a Member</Button>
+          <Button 
+          className="h-12 px-6">
+            <a href="/membership">Become a Member</a>
+            </Button>
           <Button variant="outline" className="h-12 px-6">
-            Explore Services →
+            <a href="/services">Explore Services →</a>
           </Button>
         </div>
 

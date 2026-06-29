@@ -1,0 +1,18 @@
+:root {
+  --color-primary: #197fe6;
+  --color-background-light: #f6f7f8;
+  --color-background-dark: #111921;
+  --font-display: "Public Sans", sans-serif;
+}
+
+body {
+  font-family: var(--font-display);
+}
+
+/* utility-like helpers (since we "moved config to css") */
+.bg-primary { background-color: var(--color-primary); }
+.text-primary { color: var(--color-primary); }
+.border-primary\/10 { border-color: color-mix(in srgb, var(--color-primary) 10%, transparent); }
+.border-primary\/20 { border-color: color-mix(in srgb, var(--color-primary) 20%, transparent); }
+.bg-background-light { background-color: var(--color-background-light); }
+.bg-background-dark { background-color: var(--color-background-dark); }

@@ -39,7 +39,7 @@ const ServicesSection = () => {
             <div className="mt-auto pt-4 border-t border-dashed border-border-light  ">
               <a
                 className="inline-flex items-center text-sm font-bold text-primary hover:text-primary/80 transition-colors"
-                href="#"
+                href="/membership"
               >
                 Explore Membership
                 <MdArrowForward className="ml-1 !text-lg" />
@@ -62,7 +62,7 @@ const ServicesSection = () => {
             <div className="mt-auto pt-4 border-t border-dashed border-border-light  ">
               <a
                 className="inline-flex items-center text-sm font-bold text-primary hover:text-primary/80 transition-colors"
-                href="#"
+                href="/services"
               >
                 View Solutions
                 <MdArrowForward className="ml-1 !text-lg" />
