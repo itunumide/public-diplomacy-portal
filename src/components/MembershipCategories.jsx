@@ -6,7 +6,7 @@ import {
   MdArrowForward,
   MdDownload,
 } from "react-icons/md";
-import pdf from "../components/reuseables/CIPDM1.PDF"
+import pdf from "../components/reuseables/CIPDM1.pdf"
 const MembershipCategories = () => {
   const [activeTab, setActiveTab] = useState("associate");
 
