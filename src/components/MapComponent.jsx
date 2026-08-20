@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { MdMap } from "react-icons/md";
-import cipdm from "../asset/cipdm.jpeg"
+import cipdm from "../asset/Cipdm.jpeg"
 const MapComponent = () => {
   const [imageError, setImageError] = useState(false);
   return (
